@@ -1,0 +1,26 @@
+.banner {
+  position: relative;
+  height: 223px;
+  border-radius: 25px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  // filtre sombre sur l'image
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  h1 {
+    position: relative;
+    color: white;
+    font-size: 48px;
+    font-weight: 500;
+  }
+}

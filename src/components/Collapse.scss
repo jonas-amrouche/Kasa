@@ -1,0 +1,36 @@
+$red: #ff6060;
+
+.collapse {
+  width: 100%;
+  margin-bottom: 20px;
+
+  .collapse-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .arrow {
+    font-size: 30px;
+
+    &.open {
+      transform: rotate(180deg);
+    }
+  }
+
+  .collapse-content {
+    background-color: #f7f7f7;
+    color: $red;
+    padding: 20px;
+    font-size: 18px;
+    border-radius: 0 0 5px 5px;
+  }
+}

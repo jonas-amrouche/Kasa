@@ -1,0 +1,21 @@
+
+body {
+  margin: 0;
+  font-family: Montserrat, sans-serif;
+}
+
+.home {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  background-color: #f7f7f7;
+  padding: 50px;
+  border-radius: 25px;
+  margin-top: 40px;
+}
