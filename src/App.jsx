@@ -1,19 +1,19 @@
-import Banner from './components/Banner'
-import Card from './components/Card'
-import Collapse from './components/Collapse'
-import logements from '../logements.json'
+import { Routes, Route } from 'react-router-dom'
+import Header from './components/Header'
+import Footer from './components/Footer'
+import Home from '../pages/Home'
 
 function App() {
   return (
-    <div className="home">
-      <Banner image={logements[0].cover} title="Chez vous, partout et ailleurs" />
-      <div className="gallery">
-        {logements.map((logement) => (
-          <Card key={logement.id} title={logement.title} cover={logement.cover} />
-        ))}
-      </div>
-      <Collapse title="Description">{logements[0].description}</Collapse>
-    </div>
+    <>
+      <Header />
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </main>
+      <Footer />
+    </>
   )
 }
 
