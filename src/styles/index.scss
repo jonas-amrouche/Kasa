@@ -11,13 +11,3 @@ main {
   margin: 0 auto;
   padding: 0 20px;
 }
-
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 50px;
-  background-color: $grey;
-  padding: 50px;
-  border-radius: 25px;
-  margin-top: 40px;
-}

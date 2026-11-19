@@ -1,14 +1,15 @@
 @use '../styles/variables' as *;
 
-.footer {
+footer {
   margin-top: 60px;
   padding: 40px 0;
   background-color: $black;
   color: $white;
   text-align: center;
 
-  .logo {
-    font-size: 40px;
-    font-weight: 700;
+  img {
+    height: 40px;
+    // logo en blanc sur le fond noir
+    filter: brightness(0) invert(1);
   }
 }

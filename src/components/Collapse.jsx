@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './Collapse.scss'
 
-function Collapse({ title, children }) {
+function Collapse({ title, content }) {
   const [open, setOpen] = useState(false)
 
   return (
@@ -10,7 +10,7 @@ function Collapse({ title, children }) {
         {title}
         <span className={open ? 'arrow open' : 'arrow'}>⌄</span>
       </button>
-      {open && <div className="collapse-content">{children}</div>}
+      {open && <div className="collapse-content">{content}</div>}
     </div>
   )
 }

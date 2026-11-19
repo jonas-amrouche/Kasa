@@ -1,13 +1,15 @@
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import './Header.scss'
 
 function Header() {
   return (
-    <header className="header">
-      <Link to="/" className="logo">Kasa</Link>
+    <header>
+      <Link to="/">
+        <img src="/logo.svg" alt="Kasa" />
+      </Link>
       <nav>
-        <Link to="/">Accueil</Link>
-        <Link to="/a-propos">A Propos</Link>
+        <NavLink to="/">Accueil</NavLink>
+        <NavLink to="/a-propos">A Propos</NavLink>
       </nav>
     </header>
   )
